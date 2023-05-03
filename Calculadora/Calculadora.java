@@ -2,6 +2,7 @@ package Calculadora;
 
 import java.util.Scanner;
 import java.util.Locale;
+import java.lang.Double;
 
 public class Calculadora {
     public static void main(String[] args) {
@@ -44,12 +45,12 @@ public class Calculadora {
                 System.out.println("SOMAR!");
 
                 System.out.print("Digite o primeiro número:");
-                int numero1 = scanner.nextInt();
+                Integer numero1 = scanner.nextInt();
 
                 System.out.print("Digite o segundo número:");
-                int numero2 = scanner.nextInt();
+                Integer numero2 = scanner.nextInt();
 
-                int soma = numero1 + numero2;
+                Integer soma = numero1 + numero2;
                 System.out.println("O resultado é:" + soma);
                 break;
             }
@@ -57,12 +58,12 @@ public class Calculadora {
 
                 System.out.println("SUBTRAIR!");
                 System.out.print("Digite o primeiro número:");
-                int numero1 = scanner.nextInt();
+                Integer numero1 = scanner.nextInt();
 
                 System.out.print("Digite o segundo número:");
-                int numero2 = scanner.nextInt();
+                Integer numero2 = scanner.nextInt();
 
-                int subtracao = numero1 - numero2;
+                Integer subtracao = numero1 - numero2;
                 System.out.println("O resultado é:" + subtracao);
                 break;
             }
@@ -70,12 +71,12 @@ public class Calculadora {
 
                 System.out.println("MULTIPLICAR!");
                 System.out.print("Digite o primeiro número:");
-                int numero1 = scanner.nextInt();
+                Integer numero1 = scanner.nextInt();
 
                 System.out.print("Digite o segundo número:");
-                int numero2 = scanner.nextInt();
+                Integer numero2 = scanner.nextInt();
 
-                int multiplicacao = numero1 * numero2;
+                Integer multiplicacao = numero1 * numero2;
                 System.out.println("O resultado é:" + multiplicacao);
                 break;
             }
@@ -84,16 +85,16 @@ public class Calculadora {
 
                 System.out.println("DIVIDIR!");
                 System.out.print("Digite o primeiro número:");
-                double numero1 = scanner.nextInt();
+                Double numero1 = Double.valueOf(scanner.nextInt());
 
                 System.out.print("Digite o segundo número:");
-                double numero2 = scanner.nextInt();
+                Double numero2 = Double.valueOf(scanner.nextInt());
 
 
                 if (numero2 == 0) {
                     System.out.println("Não é possível dividir por zero :(");
                 } else {
-                    double divisao = numero1 / numero2;
+                    Double divisao = numero1 / numero2;
                     System.out.println("O resultado é:" + divisao);
                 }
             }
